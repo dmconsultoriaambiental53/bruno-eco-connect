@@ -68,6 +68,14 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			backgroundImage: {
+				'nature-gradient': 'var(--nature-gradient)',
+				'hero-gradient': 'var(--hero-gradient)'
+			},
+			boxShadow: {
+				'leaf': 'var(--leaf-shadow)',
+				'glow-green': 'var(--glow-green)'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {

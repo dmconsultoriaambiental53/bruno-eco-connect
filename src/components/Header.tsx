@@ -38,42 +38,32 @@ const Header = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-8">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  className={navigationMenuTriggerStyle()}
-                  onClick={() => scrollToSection('about')}
-                >
-                  Quem somos
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  className={navigationMenuTriggerStyle()}
-                  onClick={() => scrollToSection('services')}
-                >
-                  Serviços
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  className={navigationMenuTriggerStyle()}
-                  onClick={() => scrollToSection('region')}
-                >
-                  Região atendida
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  className={navigationMenuTriggerStyle()}
-                  onClick={() => scrollToSection('contact')}
-                >
-                  Contatos
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+          <nav className="flex items-center gap-8">
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Quem somos
+            </button>
+            <button 
+              onClick={() => scrollToSection('services')}
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Serviços
+            </button>
+            <button 
+              onClick={() => scrollToSection('region')}
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Região atendida
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Contatos
+            </button>
+          </nav>
           
           <Button 
             variant="whatsapp" 

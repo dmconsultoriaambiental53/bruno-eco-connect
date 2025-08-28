@@ -25,6 +25,15 @@ const About = () => {
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
+                  <div className="flex flex-col items-center mb-8">
+                    <img 
+                      src="/lovable-uploads/7d2ca52c-5af4-464f-a280-e49902497cff.png" 
+                      alt="Bruno Gonçalves Silva" 
+                      className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-primary/20"
+                    />
+                    <h3 className="text-2xl font-semibold text-center">Bruno Gonçalves Silva</h3>
+                  </div>
+                  
                   <div className="flex items-center gap-2 mb-6">
                     <GraduationCap className="h-6 w-6 text-primary" />
                     <h3 className="text-xl font-semibold">Formação Profissional</h3>
@@ -61,10 +70,6 @@ const About = () => {
                     Estamos aqui para garantir que seu projeto impacte positivamente o meio ambiente e para ajudar você a crescer de forma verde e responsável.
                   </p>
                   
-                  <div className="flex items-center gap-2 mt-6">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <span className="text-sm font-medium">Barra de São Francisco - ES</span>
-                  </div>
                 </div>
               </div>
             </CardContent>

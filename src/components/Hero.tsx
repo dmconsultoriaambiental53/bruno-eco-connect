@@ -24,11 +24,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Soluções Ambientais Inteligentes e Sustentáveis
+          Garanta a sustentabilidade do seu Projeto conosco!
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
-          Atendimento especializado em licenciamento e gestão ambiental em Barra de São Francisco e região
+          Atendimento especializado em licenciamento e gestão ambiental em Barra de São Francisco e toda região.
         </p>
         
         <Button 

@@ -11,12 +11,12 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary/30">
+    <section id="about" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Quem é Bruno Gonçalves Silva?
+              O que é a DM?
             </h2>
             <div className="w-24 h-1 bg-nature-gradient mx-auto mb-8"></div>
           </div>
@@ -50,15 +50,15 @@ const About = () => {
                 
                 <div className="bg-muted rounded-lg p-6">
                   <p className="text-muted-foreground leading-relaxed">
-                    Com sólida formação multidisciplinar e experiência prática, Bruno atua na 
-                    orientação técnica e execução de projetos voltados à sustentabilidade, 
-                    regularização e recuperação ambiental.
+                    A DM Consultoria Ambiental é uma empresa que ajuda você a cuidar do meio ambiente enquanto desenvolve seu projeto. Liderada por Bruno Gonçalves Silva, biólogo e engenheiro ambiental, oferecemos serviços práticos e eficazes para fazer seu empreendimento cumprir todas as regras ambientais.
                   </p>
                   
                   <p className="text-muted-foreground leading-relaxed mt-4">
-                    Sua expertise abrange desde o licenciamento ambiental até a implementação 
-                    de soluções inovadoras para gestão de recursos naturais, sempre com foco 
-                    na conformidade legal e preservação do meio ambiente.
+                    Na prática, fazemos licenciamento ambiental, perícias, planos de recuperação para áreas degradadas e gerenciamento de resíduos. Nosso objetivo é facilitar a vida dos nossos clientes, garantindo que tudo seja feito de forma correta e sustentável.
+                  </p>
+
+                  <p className="text-muted-foreground leading-relaxed mt-4">
+                    Estamos aqui para garantir que seu projeto impacte positivamente o meio ambiente e para ajudar você a crescer de forma verde e responsável.
                   </p>
                   
                   <div className="flex items-center gap-2 mt-6">

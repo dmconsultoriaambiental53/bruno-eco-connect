@@ -3,7 +3,7 @@ import { MapPin, Clock, Target, Phone } from "lucide-react";
 
 const Region = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="region" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">

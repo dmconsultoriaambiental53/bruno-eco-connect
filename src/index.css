@@ -111,5 +111,26 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-display: swap;
+  }
+  
+  img {
+    @apply object-cover;
+    content-visibility: auto;
+  }
+  
+  /* Performance optimizations */
+  .animate-bounce {
+    will-change: transform;
+  }
+  
+  /* Lazy loading optimization */
+  img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  img[loading="lazy"].loaded {
+    opacity: 1;
   }
 }

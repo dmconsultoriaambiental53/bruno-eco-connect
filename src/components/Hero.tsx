@@ -16,7 +16,10 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ 
+          backgroundImage: `url(${heroImage})`,
+          willChange: 'transform'
+        }}
       >
         <div className="absolute inset-0 bg-hero-gradient opacity-75"></div>
       </div>

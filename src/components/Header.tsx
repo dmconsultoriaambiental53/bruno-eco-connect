@@ -31,9 +31,10 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/35088a10-9fab-42ff-adc7-c36f2109f33c.png" 
+            src="/lovable-uploads/1ae8094a-b7c4-4994-9a54-61cb14ea4dbb.png" 
             alt="DM Consultoria Ambiental" 
-            className="h-12 w-auto"
+            className="h-14 w-auto"
+            loading="eager"
           />
         </div>
         

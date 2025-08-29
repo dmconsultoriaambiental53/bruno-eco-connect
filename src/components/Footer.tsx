@@ -24,11 +24,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>(27) 99999-9999</span>
+                <span>+55 27 99647‑7710</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>contato@dmconsultoria.com.br</span>
+                <span>bruno.ses.1986@gmail.com</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1" />
@@ -55,7 +55,16 @@ const Footer = () => {
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 DM Consultoria Ambiental. Todos os direitos reservados.
+            © 2024 DM Consultoria Ambiental. Site desenvolvido pela{" "}
+            <a 
+              href="https://www.instagram.com/agencia.mult/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary-foreground hover:text-primary-foreground/80 underline"
+            >
+              Agência Mult
+            </a>
+            .
           </p>
         </div>
       </div>

@@ -14,11 +14,16 @@ const Contact = () => {
     message: ""
   });
 
-  const whatsappNumber = "5527999999999"; // Replace with actual number
+  const whatsappNumber = "5527996477710";
   
   const handleWhatsAppClick = () => {
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços de consultoria ambiental.")}`;
+    window.open(url, '_blank');
+  };
+
+  const handleWhatsAppClickWithForm = () => {
     const whatsappMessage = formData.message 
-      ? `Olá! Meu nome é ${formData.name}. ${formData.message}`
+      ? `Olá! Meu nome é ${formData.name}.${formData.email ? ` Meu e-mail é ${formData.email}.` : ""} ${formData.message}`
       : "Olá! Gostaria de saber mais sobre os serviços de consultoria ambiental.";
     
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -35,7 +40,7 @@ const Contact = () => {
       });
       return;
     }
-    handleWhatsAppClick();
+    handleWhatsAppClickWithForm();
     setFormData({ name: "", email: "", message: "" });
     toast({
       title: "Redirecionando para WhatsApp",
@@ -132,7 +137,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">Telefone/WhatsApp</p>
-                      <p className="text-sm text-muted-foreground">(27) 99999-9999</p>
+                      <p className="text-sm text-muted-foreground">+55 27 99647‑7710</p>
                     </div>
                   </div>
                   
@@ -140,18 +145,11 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">E-mail</p>
-                      <p className="text-sm text-muted-foreground">contato@dmconsultoria.com.br</p>
+                      <p className="text-sm text-muted-foreground">bruno.ses.1986@gmail.com</p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="bg-muted rounded-lg p-4 mt-6">
-                  <h4 className="font-medium mb-2">Horário de Atendimento</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Segunda a Sexta: 8h às 18h<br />
-                    Sábado: 8h às 12h
-                  </p>
-                </div>
               </CardContent>
             </Card>
           </div>

@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-environmental.jpg";
 
 const Hero = () => {
-  const whatsappNumber = "5527999999999"; // Replace with actual number
+  const whatsappNumber = "5527996477710";
   const whatsappMessage = "Olá! Gostaria de saber mais sobre os serviços de consultoria ambiental.";
   
   const handleWhatsAppClick = () => {

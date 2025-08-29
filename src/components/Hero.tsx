@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-environmental.jpg";
+// import heroImage from "@/assets/hero-environmental.jpg";
 
 const Hero = () => {
   const whatsappNumber = "5527996477710";
@@ -17,7 +17,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `url(/lovable-uploads/af973730-7adc-485d-bb48-27de5fa3ea35.png)`,
           willChange: 'transform'
         }}
       >

@@ -58,11 +58,16 @@ const Region = () => {
                   <div className="bg-background rounded-lg p-4">
                     <p className="text-sm text-muted-foreground mb-2">Principais cidades atendidas:</p>
                     <div className="text-sm font-medium space-y-1">
+                      <div>Água Doce do Norte</div>
+                      <div>Águia Branca</div>
+                      <div>Alto Rio Novo</div>
                       <div>Barra de São Francisco</div>
                       <div>Ecoporanga</div>
-                      <div>Água Doce do Norte</div>
-                      <div>Vila Pavão</div>
-                      <div>E região</div>
+                      <div>Mantenópolis</div>
+                      <div>Mantena</div>
+                      <div>Nova Venécia</div>
+                      <div>Pancas</div>
+                      <div>São Gabriel da Palha</div>
                     </div>
                   </div>
                 </div>

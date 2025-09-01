@@ -1,9 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, MapPin } from "lucide-react";
+
 const About = () => {
-  const credentials = ["Biólogo (CRbio 131793/10-D)", "Tecnólogo em Gestão Ambiental", "Engenheiro Ambiental e Sanitarista", "Técnico em Construção Civil (CRT ES 11394848773)"];
-  return <section id="about" className="py-20 bg-secondary/30">
+  const credentials = [
+    "Biólogo (CRbio 131793/10-D)",
+    "Tecnólogo em Gestão Ambiental", 
+    "Engenheiro Ambiental e Sanitarista",
+    "Técnico em Construção Civil (CRT ES 11394848773)"
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -18,7 +26,11 @@ const About = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="flex flex-col items-center mb-8">
-                    <img src="/lovable-uploads/7d2ca52c-5af4-464f-a280-e49902497cff.png" alt="Bruno Gonçalves Silva" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-primary/20" />
+                    <img 
+                      src="/lovable-uploads/7d2ca52c-5af4-464f-a280-e49902497cff.png" 
+                      alt="Bruno Gonçalves Silva" 
+                      className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-primary/20"
+                    />
                     <h3 className="text-2xl font-semibold text-center">Bruno Gonçalves Silva</h3>
                   </div>
                   
@@ -28,12 +40,21 @@ const About = () => {
                   </div>
                   
                   <div className="space-y-3 mb-8">
-                    {credentials.map((credential, index) => <Badge key={index} variant="secondary" className="text-sm px-3 py-1 block w-fit">
+                    {credentials.map((credential, index) => (
+                      <Badge 
+                        key={index} 
+                        variant="secondary" 
+                        className="text-sm px-3 py-1 block w-fit"
+                      >
                         {credential}
-                      </Badge>)}
+                      </Badge>
+                    ))}
                   </div>
                   
-                  
+                  <div className="flex items-center gap-2 mb-4">
+                    <Award className="h-6 w-6 text-primary" />
+                    <h3 className="text-xl font-semibold">Experiência</h3>
+                  </div>
                 </div>
                 
                 <div className="bg-muted rounded-lg p-6">
@@ -55,6 +76,8 @@ const About = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

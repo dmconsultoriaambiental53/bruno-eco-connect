@@ -51,10 +51,6 @@ const About = () => {
                     ))}
                   </div>
                   
-                  <div className="flex items-center gap-2 mb-4">
-                    <Award className="h-6 w-6 text-primary" />
-                    <h3 className="text-xl font-semibold">Experiência</h3>
-                  </div>
                 </div>
                 
                 <div className="bg-muted rounded-lg p-6">
